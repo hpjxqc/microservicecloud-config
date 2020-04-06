@@ -20,6 +20,9 @@ eureka:
       defaultZone: http://eurekaServer01.com:7001/eureka/,http://eurekaServer02.com:7002/eureka/
   server:
     enable-self-preservation: false # 禁用自我保护机制*****************
+security:
+  basic:
+    enabled: false
 ---
 server:
   port: 7003 #端口号
@@ -38,5 +41,8 @@ eureka:
       defaultZone: http://eurekaServer01.com:7001/eureka/,http://eurekaServer02.com:7002/eureka/
   server:
     enable-self-preservation: true # 开启自我保护机制*****************
+security:
+  basic:
+    enabled: false
     
 #保存时注意，选择 UTF-8 保存
